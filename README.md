@@ -6,8 +6,7 @@ For detailed description of Racher installation and other documentation refer:
 
 
 ## **Choose the deployment**
-#### **Citrix Ingress Controller for VPX, MPX**
-
+### **Citrix Ingress Controller for VPX, MPX**
 Download "citrix-k8s-ingress-controller.yaml" from the deployment Directory.
 
       wget  https://raw.githubusercontent.com/citrix/citrix-k8s-ingress-controller/master/deployment/baremetal/citrix-k8s-ingress-controller.yaml
@@ -24,8 +23,7 @@ Create a new file in the launched terminal and copy paste the content of the upd
 
 On successful deployment, the launched application can be seen in the "workloads" sections of the cluster project on Rancher GUI.
 
-#### **CPX with builtin Controller**
-
+### **CPX with builtin Controller**
 Download "citrix-k8s-cpx-ingress.yml" from the deployment Directory.
 
       wget  https://raw.githubusercontent.com/citrix/citrix-k8s-ingress-controller/master/deployment/baremetal/citrix-k8s-cpx-ingress.yml
@@ -41,8 +39,7 @@ Create a new file in the launched terminal and copy paste the content of the yam
 
 On successful deployment, the launched application can be seen in the "workloads" sections of the cluster project on Rancher GUI.
 
-#### **Citrix node controller**
-
+### **Citrix node controller**
 Download "citrix-k8s-node-controller.yaml" from the deployment Directory.
 
       wget  https://raw.githubusercontent.com/janraj/citrix-k8s-node-controller/master/deploy/citrix-k8s-node-controller.yaml
