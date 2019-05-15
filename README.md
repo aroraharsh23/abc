@@ -21,7 +21,7 @@ Create a new file in the launched terminal and copy paste the content of the upd
 
       kubectl create -f <filename>
 
-On successful deployment, the launched application can be seen in the "workloads" sections of the cluster project on Rancher GUI.
+Launched application can be seen in the "workloads" sections of the cluster project on Rancher GUI.
 
 ### **CPX with builtin Controller**
 Download "citrix-k8s-cpx-ingress.yml" from the deployment Directory.
@@ -37,7 +37,7 @@ Create a new file in the launched terminal and copy paste the content of the yam
 
       kubectl create -f <filename>
 
-On successful deployment, the launched application can be seen in the "workloads" sections of the cluster project on Rancher GUI.
+Launched application can be seen in the "workloads" sections of the cluster project on Rancher GUI.
 
 ### **Citrix node controller**
 Download "citrix-k8s-node-controller.yaml" from the deployment Directory.
