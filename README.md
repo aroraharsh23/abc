@@ -38,16 +38,3 @@ Create a new file in the launched terminal and copy paste the content of the yam
       kubectl create -f <filename>
 
 Launched application can be seen in the "workloads" sections of the cluster project on Rancher GUI.
-
-### **Citrix node controller**
-Download "citrix-k8s-node-controller.yaml" from the deployment Directory.
-
-      wget  https://raw.githubusercontent.com/janraj/citrix-k8s-node-controller/master/deploy/citrix-k8s-node-controller.yaml
-
-Follow [citrix-k8s-node-controller/deploy](https://github.com/janraj/citrix-k8s-node-controller/tree/master/deploy) guide for description and fields to be updated.
-On Rancher GUI cluster page, click on "Launch Kubectl". It will open a terminal for Kubectl on the same page.
-Create a new file in the launched terminal, copy paste the content of the updated yaml and use the following command.
-
-      kubectl create -f <filename>
-
-This will create a new namepace called citrixnode. To view the workloads for this namespace on Rancher GUI, move the newly created namespace to the "default" project or the project where other related apps were created.
