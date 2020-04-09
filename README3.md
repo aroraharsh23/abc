@@ -1,6 +1,6 @@
-# Get Citrix ADC VPX URL on Azure Marketplace
+# Get Citrix ADC VPX on Azure Marketplace
 
-This guide explains the steps to create the URL for Citrix ADC VPX on Azure Markerplace.
+This guide explains the steps to create Citrix ADC VPX on Azure Markerplace.
 
 #### Prerequisites:
 
