@@ -38,8 +38,8 @@ This guide explains the steps to create the URL for Citrix ADC CPX image on Azur
      <img src="images/image_cpx_6.png" width="600">
    - Under "services" on Left column, click on "Repositories"
      <img src="images/image_cpx_7.png" width="600">
-   - Find the "citrix/citrix-k8s-ingess-controller" under repositories and select it.
+   - Find the "citrix/citrix-k8s-cpx-ingress-13.0" under repositories and select it.
      <img src="images/image_cpx_8.png" width="600">
    - Now, select "latest" in the new right column.
      <img src="images/image_cpx_9.png" width="600">
-   - Here, image URL is shared in "Docker pull command" text. Copy the same and replace as image in CIC yaml.
+   - Here, image URL is shared in "Docker pull command" text. Copy the same and replace as image in CPX yaml.
