@@ -44,6 +44,7 @@ This guide explains the steps to create the URL for CIC image on Azure Markerpla
    - Find the "citrix/citrix-k8s-ingess-controller" under repositories and select it.
      <img src="images/image_9.png" width="500">
    - Now, select "latest" in the new right column.
+   
      <img src="images/image_10.png" width="500">
    - Here, image URL is shared in "Docker pull command" text. Copy the same and replace as image in CIC yaml.
    
