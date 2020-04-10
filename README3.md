@@ -38,5 +38,21 @@ This guide explains the steps to create Citrix ADC VPX on Azure Markerplace.
    - Specify 'Username' and 'Password'
    - Do select all the relavant 'inbound ports' from Dropdown, then click "Next"
      <img src="images/image_vpx_5.png" width="500">
+   - Verify Disk details and click "Next"
+   
+     <img src="images/image_vpx_6.png" width="500">
+   - Verify "Virtual network" and "Subnet", these should be same as that of the resource group. Click "Next"
+     <img src="images/image_vpx_7.png" width="500">
+   - Verify Management details and click "Next"
+     <img src="images/image_vpx_8.png" width="500">
+   - Verify any Advanced details if required. click "Next"
+     <img src="images/image_vpx_9.png" width="500">
+   - Specify any Tags if needed, click "Next"
+   
+     <img src="images/image_vpx_10.png" width="500">
+   - Finally review all the details of the VPX and click "Create"
+     <img src="images/image_vpx_11.png" width="500">
+   - Wait for some time till the deployment is complete.
      
-5. 
+5. Set VPX networking Configurations required for usage in cluster as part of ingress/CIC deployment
+  - 
