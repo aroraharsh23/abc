@@ -56,4 +56,19 @@ This guide explains the steps to create Citrix ADC VPX on Azure Markerplace.
    - Wait for some time till the deployment is complete.
      
 5. Set VPX networking Configurations required for usage in cluster as part of ingress/CIC deployment
-  - 
+  - Go to 'Networking' section on deployed VPX Page and select the 'Network Interface' on the right
+    <img src="images/image_vpx_12.png" width="500">
+  -  Select 'IP configurations' on the network interface page and click on '+Add' for adding new IP.
+    <img src="images/image_vpx_13.png" width="500">
+  -  Add a 'SNIP'. Specify a 'Name'. Keep 'Allocation' as Dynamic and 'Public IP' as 'Disabled'
+    <img src="images/image_vpx_14.png" width="500">
+  -  Add a 'VIP'. Specify a 'Name'. Keep 'Allocation' as Dynamic. Keep 'Public IP' as 'Enabled' then set a 'Name' for same          under required settings
+  
+     <img src="images/image_vpx_15.png" width="500">
+     <img src="images/image_vpx_16.png" width="500">
+    
+  -  Verify all the IP configurations done and then set 'IP forwardind' as Enabled.
+    <img src="images/image_vpx_17.png" width="500">
+  
+ Note : Before proceeding with the deployment testing, please make sure all the necessary firewall settings have been done.           For instance, as part of inbound rules of VPX and network security group for the cluster. Verify SSH access and
+        other port 80/443 access.
