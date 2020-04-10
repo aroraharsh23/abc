@@ -15,8 +15,10 @@ This guide explains the steps to create the URL for CIC image on Azure Markerpla
    - Enter any name in Resource group Textbox and set a region.
       <img src="images/image_1.png" width="500">
    - Click on Review+create
+   
    - Review the details and click on Create.
       <img src="images/image_2.png" width="500">
+      
 3. Select "Citrix Ingress Controller" on Azure Marketplace
    <img src="images/image_3.png" width="500">
    - Click on "GET IT NOW"
