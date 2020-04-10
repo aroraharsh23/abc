@@ -44,5 +44,5 @@ This guide explains the steps to create the URL for CIC image on Azure Markerpla
    - Now, select "latest" in the new right column.
      <img src="images/image_10.png" width="600">
    - Here, image URL is shared in "Docker pull command" text. Copy the same and replace as image in CIC yaml.
-   <>
+   
 
