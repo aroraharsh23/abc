@@ -10,7 +10,8 @@ This guide explains the steps to create the URL for Citrix ADC CPX image on Azur
 ## Steps:
 
 1. Login to your Azure Marketplace Account.
-2. Create a Resource Group under your subscription.
+2. Create a Resource Group under your subscription if the kubernetes cluster has not been created yet. Please note that the      resouce group of the cluster and the CPX registry must be same. So, if the kubernetes cluster where the CPX is to deployed    already exists, then, same resource group should be used for CPX registry. If not, then create a new resouce group and then    create cluster with this new resource group.
+
    - Enter any name in Resource group Textbox and set a region.
       <img src="images/image_cpx_1.png" width="600">
    - Click on Review+create
