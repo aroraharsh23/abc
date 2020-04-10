@@ -29,7 +29,7 @@ This guide explains the steps to create Citrix ADC VPX on Azure Markerplace.
    - Specify a "virtual machine name"
    - Specify a "Region" which should be same as that of the cluster
      <img src="images/image_vpx_3.png" width="500">
-   - Choose a particular "Size"
+   - Specify a "Size" for the VPX 
      <img src="images/image_vpx_4.png" width="500">
    - You can select 'Password' as "Authentication Type"
    - Specify 'Username' and 'Password'
