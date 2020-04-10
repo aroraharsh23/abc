@@ -22,9 +22,10 @@ This guide explains the steps to create the URL for Citrix ADC CPX image on Azur
 3. Select "Citrix ADC CPX" on Azure Marketplace
 
    <img src="images/image_cpx_3.png" width="500">
-   - Click on "GET IT NOW"
-   - Verify the details on pop-up and Click on "Continue"
    
+   - Click on "GET IT NOW"
+   
+   - Verify the details on pop-up and Click on "Continue"
      <img src="images/image_cpx_4.png" width="500">
 
 4. Create CPX Image registry with the Resource Group created in step 2
