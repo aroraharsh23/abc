@@ -13,11 +13,11 @@ This guide explains the steps to create the URL for CIC image on Azure Markerpla
 2. Create a Resource Group under your subscription if the kubernetes cluster has not been created yet. Please note that the      resouce group of the cluster and the CIC registry must be same. So, if the kubernetes cluster where the CIC is to deployed    already exists, then, same resource group should be used for CIC registry. If not, then create a new resouce group and then    create cluster with this new resource group. 
 
    - Enter any name in Resource group Textbox and set a region.
-      <img src="images/image_1.png" width="500">
-   - Click on Review+create
-   
+     <img src="images/image_1.png" width="500">
+   - Click on Review+create   
    - Review the details and click on Create.
-      <img src="images/image_2.png" width="500">
+   
+     <img src="images/image_2.png" width="500">
       
 3. Select "Citrix Ingress Controller" on Azure Marketplace
    <img src="images/image_3.png" width="500">
