@@ -44,6 +44,7 @@ This guide explains the steps to create Citrix ADC VPX on Azure Markerplace.
    - Verify "Virtual network" and "Subnet", these should be same as that of the resource group. Click "Next"
      <img src="images/image_vpx_7.png" width="500">
    - Verify Management details and click "Next"
+   
      <img src="images/image_vpx_8.png" width="500">
    - Verify any Advanced details if required. click "Next"
      <img src="images/image_vpx_9.png" width="500">
