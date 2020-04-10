@@ -10,7 +10,8 @@ This guide explains the steps to create the URL for CIC image on Azure Markerpla
 ## Steps:
 
 1. Login to your Azure Marketplace Account.
-2. Create a Resource Group under your subscription.
+2. Create a Resource Group under your subscription if the kubernetes cluster has not been created yet. Please note that the      resouce group of the cluster and the CIC registry must be same. So, if the kubernetes cluster where the CIC is to deployed    already exists, then, same should be used for CIC registry. If not, then create a new one and then create cluster with this    new resource group. 
+
    - Enter any name in Resource group Textbox and set a region.
       <img src="images/image_1.png" width="600">
    - Click on Review+create
