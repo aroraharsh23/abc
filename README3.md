@@ -69,6 +69,8 @@ This guide explains the steps to create Citrix ADC VPX on Azure Markerplace.
     
   -  Verify all the IP configurations done and then set 'IP forwarding' as Enabled.
     <img src="images/image_vpx_17.png" width="500">
+    
+6. Verify if you are able to ssh into VPX using the Primary public IP address, using the username and password set during        VPX creation time
   
  Note : Before proceeding with the deployment testing, please make sure all the necessary firewall settings have been done.           For instance, as part of inbound rules of VPX and network security group for the cluster. Verify SSH access and
         other port 80/443 access.
