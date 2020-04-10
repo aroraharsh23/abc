@@ -5,17 +5,20 @@ This guide explains the steps to create Citrix ADC VPX on Azure Markerplace.
 #### Prerequisites:
 
 - Valid Azure Marketplace account and Subscription
+- An existing Kubernetes cluster in Azure.
 
 
 ## Steps:
 
 1. Login to your Azure Marketplace Account.
-2. Create a Resource Group under your subscription.
-   - Enter any name in Resource group Textbox and set a region.
-      <img src="images/image_cpx_1.png" width="600">
-   - Click on Review+create
-   - Review the details and click on Create.
-      <img src="images/image_cpx_2.png" width="600">
+2. Locate the automatically created resource group as a part of creating the kuberentes cluster to be used with VPX. 
+   - If the kubernetes cluster 'X' is a part of a resource group 'Y' in region 'Z' then look for a resource group starting          with "MC" followed ty "X_Y_Z" i.e with the format "MC_X_Y_Z"
+   - For instance, 
+       - cluster name is "cic-cluster-basic-1", 
+       - resource group for the cluster is "AKS_RG", 
+       - region used for cluster is 'southindia'
+       then a new resouce group would have been automatically as "MC_AKS_RG_cic-cluster-basic-1_southindia"
+     <img src="images/image_vpx_1.png" width="600">
 3. Select "Citrix ADC VPX" on Azure Marketplace
    <img src="images/image_cpx_3.png" width="600">
    - Click on "GET IT NOW"
