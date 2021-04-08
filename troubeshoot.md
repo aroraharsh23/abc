@@ -55,7 +55,7 @@ As functionally wise, it will not cause any issue, user if required can ping wit
 
 Note: If it is absolutely required to ping with NSIP itself, then as of now, User need to remove the PBR entry or add new PBR entry for endpoint with higher priority
 
-### Curl to the pod endpoint not working
+### Curl to the pod endpoint/VIP not working
 
 This is the case wherein though services are UP, still user can't curl to the pod endpoint,that means, stateful TCP session to endpoint fails. 
 One Probable reason for this could be the ns mode "MBF" set to Enable. This issue depends upon deployments and might occur only on certain versions of ADC.
