@@ -50,17 +50,17 @@ We can verify few things to debug the issue of services being in DOWN state.
 ### Service status UP but ping from ADC not working
 
 This is the case wherein though services are UP, still user can't do ping from ADC to the service IP. 
-One probable reason for this could be the presence of a PBR entry which directs the packets from ADC with SRCIPas NSIP to a default gateway.
-As functionally wise, it will not cause any issue, user can ping with SRCIP as ADC VTEP created by CNC. User can use "-s" option to set the SRCIP to SNIP added by CNC on ADC.
+One probable reason for this could be the presence of a PBR entry which directs the packets from ADC with SRCIP as NSIP to a default gateway.
+As functionally wise, it will not cause any issue, user if required can ping with SRCIP as ADC VTEP created by CNC. User can use "-s" option to set the SRCIP to SNIP added by CNC on ADC.
 
-Note: If its absolutely required to ping with NSIP itself, then as of now, User need to remove the PBR entry or add new PBR entry for endpoint with higher priority
+Note: If it is absolutely required to ping with NSIP itself, then as of now, User need to remove the PBR entry or add new PBR entry for endpoint with higher priority
 
 ### Curl to the pod endpoint not working
 
-This is the case wherein though services are UP, still user can't curl to the pod endpoint.
-One Probable reason for this could be the ns mode "MBF" set to enable. This issue depends upon deployments andmight occur only on certain versions of ADC.
+This is the case wherein though services are UP, still user can't curl to the pod endpoint,that means, stateful TCP session to endpoint fails. 
+One Probable reason for this could be the ns mode "MBF" set to Enable. This issue depends upon deployments and might occur only on certain versions of ADC.
 
-To resolve this either:
+To resolve this, Either:
 - Disable MBF ns mode
 or
 - Bind a netprofile with netprofile Disabled to the servicegroup
@@ -69,7 +69,7 @@ Note: As of now, if disabling MBF resolves the issue, then it need to be kept di
 
 ## Customer Support
 
-As general support, while raising issue please provide following for faster debugging.
+As general support, while raising issues please provide following for faster debugging.
 
 Do a curl/ping from ADC to endpoint and do some captures.
 
@@ -99,7 +99,8 @@ For ADC:
 5. show bridgetable
 6. show ns pbrs
 7. show ns bridgetable
-8. Try and capture nstrace while ping/curl:
+8. show ns mode
+9. Try and capture nstrace while ping/curl:
    ```
    start nstrace -size 0 -mode rx new_rx txb tx -capsslkeys enABLED
    ```
