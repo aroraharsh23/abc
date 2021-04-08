@@ -2,6 +2,8 @@
 
 Quick help Guide for some of the common issues that may arise.
 
+To validate ADC and basic Node configurations, Refer the screenshots on [deployment](deploy/README.md) page.
+
 ### Service status DOWN
 
 We can verify few things to debug the issue of services being in DOWN state.
@@ -30,16 +32,17 @@ We can verify few things to debug the issue of services being in DOWN state.
    ```
    kubectl get configmaps -n <namespace> kube-cnc-router -o yaml
    ```
-   Look for Empty field in the data section of configmap. A typical 2 node data section would 
+   Look for Empty field in the data section of configmap. A typical 2 node data section would look like:
 
    <img src="images/router-cmap-data.png" width="600" height="300">
 
-4. Verify Node config
-   - CNC interface "cncvxlan<md5_of_namespace>" got created
-       - assigned VTEP IP same as the corresponding router gateway entry in ADC
-       - status of interface is UP and RUNNING
-   - iptable rule port got created.
+4. Verify Node config:
+   - CNC interface "cncvxlan<md5_of_namespace>" should getcreated
+       - assigned VTEP IP shoud be same as the corresponding router gateway entry in ADC
+       - status of interface should be UP and RUNNING
+   - iptable rule port should created.
        - port should be same as that of vxlan created on ADC
+       
 
    <img src="images/slave-1.png" width="600" height="300">
 
