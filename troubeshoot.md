@@ -85,7 +85,7 @@ For node:
    ```
 3. tcpdump capture on CNI interface lets say "vxlan.calico"
    ```
-   tcpdump -i vxlan.calic -w cni.pcap
+   tcpdump -i vxlan.calico -w cni.pcap
    ```
 4. output of "ifconfig -a" on the node.
 5. output of "iptables -L" on the node.
