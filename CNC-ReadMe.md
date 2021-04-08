@@ -67,7 +67,7 @@ Apart from "citrix-node-controller" deployment, some other resources are also cr
     - For each worker node, a "kube-cnc-router" pod.
     - A configmap "kube-cnc-router".
 
-<img src="images/kube_cnc_router.png" width="500" height="300">
+<img src="images/kube_cnc_router.png" width="600" height="300">
 
 On each of the worker nodes, a interface "cncvxlan<hash-of-namespace>" and iptables rule will get created.
 
