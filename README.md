@@ -1,4 +1,4 @@
-# Get Citrix Ingress Controller Image URL on Azure Marketplace
+Get Citrix Ingress Controller Image URL on Azure Marketplace
 
 This guide explains the steps to create the URL for CIC image on Azure Markerplace.
 
